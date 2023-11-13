@@ -11,9 +11,9 @@ headers = {
 def get_data():
 	s = requests.Session()
 	response = s.get(url=url, headers=headers)
-	soup = BeautifulSoup(response.text, 'lxml')
+	soup = BeautifulSoup(response.text, 'html.parser')
 	tags = soup.find_all('img', class_="b-image b-image__image")
-
+	print(len(tags))
 	for i in range(len(tags)):
 		link = tags[i].attrs["src"]
 		req = s.get(url=link, headers=headers)

@@ -1,5 +1,7 @@
 whisper/podalize
-whisper
+whisper/result2
+whisper/whisper.ipynb
+whisper/Pyannote.ipynb
 kaggle/kontur/runs
 kaggle/kontur/images
 kaggle/kontur/data
